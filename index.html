@@ -1404,18 +1404,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="contact-form">
                     <form id="contact-form">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Name" required>
+                            <h3>Book a Meeting</h3>
+                             <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
                         </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Subject" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn">Send Message</button>
+                       
+                        <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/kimberlyamurao60'}); return false;" type="submit" class="btn">Book Now</button>
                     </form>
                 </div>
             </div>
